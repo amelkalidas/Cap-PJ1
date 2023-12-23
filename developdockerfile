@@ -1,7 +1,0 @@
-FROM hshar/webapp
-<<<<<<< HEAD:dockerfile
-COPY . /var/www/html
-=======
-ADD . /var/www/html
-#update
->>>>>>> ba00b1d (developdockerfile):developdockerfile
