@@ -3,113 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enhanced Apache Webpage</title>
+    <title>Learn and Nurture</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
             color: #333;
         }
         header {
-            background-color: #333;
+            background-color: #009688;
             color: #fff;
-            padding: 10px;
             text-align: center;
-        }
-        nav {
-            margin-top: 10px;
-        }
-        nav a {
-            text-decoration: none;
-            color: #0066cc;
-            margin: 0 10px;
-        }
-        section {
             padding: 20px;
         }
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .gallery {
+        h1 {
+            color: #009688;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .image-container {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: space-between;
             margin-top: 20px;
         }
-        .gallery img {
-            width: 100%;
-            max-width: 300px;
-            margin-bottom: 10px;
+        .image-container img {
+            max-width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Enhanced Apache Webpage</h1>
+        <h1>Learn and Nurture</h1>
     </header>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <section>
+        <p>Welcome to our journey of learning and nurturing skills. Learning is a lifelong process, and nurturing what you learn is equally important. Here are three key aspects:</p>
 
-    <section id="home">
-        <h2>Welcome to our Enhanced Website!</h2>
-        <p>This webpage features a responsive design, a gallery section, and an interactive element. Explore the various sections and features.</p>
-    </section>
-
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We are a creative and innovative team dedicated to providing high-quality web solutions.</p>
-    </section>
-
-    <section id="gallery">
-        <h2>Image Gallery</h2>
-        <div class="gallery">
-            <img src="images/ideaimage.jpg" alt="Image 1">
-            <img src="images/learn.jpg" alt="Image 2"> 
-            <img src="images/success.jpg" alt="Image 3">
-            <!-- Add more images as needed -->
+        <div class="image-container">
+            <img src="idea.jpg" alt="Image 1">
+            <img src="learn.jpg" alt="Image 2">
+            <img src="success.jpg" alt="Image 3">
         </div>
+
+        <p><strong>Continuous Learning:</strong> Embrace a mindset of continuous learning. Explore new subjects, technologies, and ideas. Stay curious and open-minded.</p>
+
+        <p><strong>Practice and Application:</strong> Apply what you learn through hands-on practice. Whether it's coding, art, or any skill, practice is the key to mastery.</p>
+
+        <p><strong>Community and Collaboration:</strong> Join communities of like-minded individuals. Collaborate, share knowledge, and learn from others. Building a network is valuable for growth.</p>
     </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="/submit" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-
-    <footer>
-        &copy; 2023 Enhanced Apache Webpage. All rights reserved.
-    </footer>
-
-    <script>
-        // Interactive Feature Example
-        const welcomeMessage = document.querySelector("#home h2");
-        welcomeMessage.addEventListener("click", function() {
-            alert("Thanks for clicking! This is an interactive feature.");
-        });
-    </script>
 
 </body>
 </html>
